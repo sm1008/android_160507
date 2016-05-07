@@ -9,4 +9,26 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.c.t01_layout.Main2Activity">
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_toRightOf="@id/editText1"
+        android:text="hello"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_below="@id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <Buttonk
+        android:layout_toRightOf="@id/editText2"
+        android:layout_alignTop="@id/editText2"
+        android:text="world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

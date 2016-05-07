@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <android.support.v7.widget.AppCompatImageView
+       android:id="@+id/imgLogin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvID"
+            android:text="ID :"
+            android:textSize="30dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editTextID"
+            android:layout_toRightOf="@id/tvID"
+            android:layout_alignBottom="@id/tvID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvPW"
+            android:text="PW :"
+            android:textSize="30dp"
+            android:layout_below="@id/tvID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editTextPW"
+            android:layout_toRightOf="@id/tvPW"
+            android:layout_alignTop="@id/tvPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPW">
+            <Button
+                android:id="@+id/btnLogin"
+                android:text="LogIn"
+                android:layout_below="@id/tvPW"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="Cancel"
+               android:layout_below="@id/tvPW"
+                android:layout_toRightOf="@id/btnLogin"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

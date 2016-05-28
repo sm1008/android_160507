@@ -31,11 +31,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onStopClock(View view){
-        if(mp!=null){
-            mp.stop();
-            mp.release();
-            mp=null;
+        try {
+            if (mp != null) {
+                mp.stop();
+
+                mp.release();
+                mp = null;
+            }
+        }catch(Exception e){
+            e.printStackTrace();
         }
+
     }
 
 }

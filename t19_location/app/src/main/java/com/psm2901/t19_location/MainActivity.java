@@ -2,7 +2,6 @@ package com.psm2901.t19_location;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
@@ -13,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 
-import java.io.IOException;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
                 textView.append(str);
                 Log.d("location",str);
 
-                try {
-                    List<Address> list = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),10);
-                    //Log.d("SIZE:", String.valueOf(list.size()));
-
-                    Address address = list.get(0);
-                    Log.d("location",address.toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    List<Address> list = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),10);
+//                    //Log.d("SIZE:", String.valueOf(list.size()));
+//
+//                    Address address = list.get(0);
+//                    Log.d("location",address.toString());
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
 
             }
 

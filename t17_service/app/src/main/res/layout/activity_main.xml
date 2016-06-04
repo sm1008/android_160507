@@ -15,4 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="start" />
+
+    <Button
+        android:layout_below="@id/btnStart"
+        android:id="@+id/btnStop"
+        android:onClick="onBtnStopClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop" />
+
 </RelativeLayout>
